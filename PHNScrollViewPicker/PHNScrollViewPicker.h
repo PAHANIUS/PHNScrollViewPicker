@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 IAS. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 /**
  *  SelectionViewType
  */
