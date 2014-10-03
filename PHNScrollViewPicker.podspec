@@ -1,38 +1,21 @@
 #
-# Be sure to run `pod lib lint PHNScrollViewPicker.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
+#  Be sure to run `pod spec lint PHNScrollViewPicker.podspec' to ensure this is a
+#  valid spec and to remove all comments including this before submitting the spec.
 #
-# Any lines starting with a # are optional, but encouraged
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
+#  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
+#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
 
 Pod::Spec.new do |s|
-  s.name             = "PHNScrollViewPicker"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of PHNScrollViewPicker."
-  s.description      = <<-DESC
-                       An optional longer description of PHNScrollViewPicker
 
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/PHNScrollViewPicker"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
-  s.license          = 'MIT'
-  s.author           = { "pavel" => "pavel.volobuev@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/PHNScrollViewPicker.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.name         = "PHNScrollViewPicker"
+  s.version      = "1.0"
+  s.summary      = "UIScrollView subclass for getting item as UIPickerView"
+  s.homepage     = "https://github.com/PAHANIUS/PHNScrollViewPicker"
+  s.license      = "MIT (example)"
+  s.author       = { "Pavel" => "pavel.volobuev@gmail.com" }
+  s.source       = { :git => "https://github.com/PAHANIUS/PHNScrollViewPicker.git", :tag => "1.0" }
+  s.source_files  = "PHNScrollViewPicker", "PHNScrollViewPicker/*.{h,m}"
+  s.requires_arc  = true
 
-  s.platform     = :ios, '7.0'
-  s.requires_arc = true
-
-  s.source_files = 'Pod/Classes'
-  s.resource_bundles = {
-    'PHNScrollViewPicker' => ['Pod/Assets/*.png']
-  }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
